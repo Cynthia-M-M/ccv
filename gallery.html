@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore AAMEC's photo gallery showcasing our events, partnerships and business networking moments across Africa, Asia and Middle East" />
+    <title>AAMEC Gallery - Capturing Our Global Business Moments</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="Assets/images/logo/Globe.png" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Contemporary & Clean -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Assets/css/styles.css" />
+    <link rel="stylesheet" href="Assets/css/colors.css" />
+    <link rel="stylesheet" href="Assets/css/gallery.css">
+
+    <!-- Gallery Script -->
+    <script src="Assets/js/gallery.js"></script>
+
+    <!-- AOS Animation Library CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Fancybox Dependencies -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg" id="mainNavbar">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <!-- Two logo versions: light for transparent, dark for solid -->
+                    <img src="Assets/images/logo/Web&#32;Version.png" alt="AAMECC LOGO" class="logo-default" width="180">
+                    <img src="Assets/images/logo/Web&#32;Version.png" alt="AAMECC LOGO" class="logo-scrolled" width="150">
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="mainNav">
+                    <div class="offcanvas-header">
+                        <img src="Assets/images/logo/Web&#32;Version.png" alt="AAMECC LOGO" width="150">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto gap-lg-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="membership.html">Membership</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Executive.html">Executive</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="events.html">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item ms-lg-3">
+                                <a href="membership.html#membership-plans" class="btn btn-nav-cta rounded-pill px-4">
+                                    Join AAMECC
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Progress indicator for scrolling -->
+        <div class="scroll-progress-container">
+            <div class="scroll-progress-bar"></div>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section class="gallery-hero">
+            <div class="hero-background">
+                <div class="hero-grid">
+                    <div class="hero-image" data-aos="fade-up" data-aos-delay="100">
+                        <img src="Assets/images/carousel/asia1.jpg" alt="AAMECC Event">
+                    </div>
+                    <div class="hero-image" data-aos="fade-up" data-aos-delay="200">
+                        <img src="Assets/images/carousel/conclave1.jpg" alt="AAMECC Conference">
+                    </div>
+                    <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                        <img src="Assets/images/carousel/hillary.jpg" alt="AAMECC Meeting">
+                    </div>
+                </div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-right">
+                    <span class="text-accent">Capturing</span> Our Global Impact
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-right" data-aos-delay="200">
+                    A visual journey through AAMECC's milestone moments across continents
+                </p>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Events</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99+</span>
+                        <span class="stat-label">Memories</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Mouse follow -->
+            <!-- <div class="mouse-follow-container">
+                <div class="mouse-follow-circle"></div>
+                <div class="mouse-follow-dot"></div>
+            </div> -->
+            <div class="scroll-down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow-container">
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Slider Gallery Section -->
+        <section class="slider-gallery" data-aos="fade-up">
+            <div class="container-fluid">
+                <div class="gallery-header">
+                    <h2 class="section-title">Featured Highlights</h2>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-slider">
+                    <div class="slider-track">
+                        <!-- Slide 1 -->
+                        <div class="slide-item">
+                            <div class="slide-content">
+                                <img src="Assets/images/Events/2025/CONCLAVE/CEO&#32;CONCLAVE-228-min.jpg"
+                                    alt="CEO Conclave">
+                                <div class="slide-info">
+                                    <span class="slide-category">Executive Event</span>
+                                    <h3>CEO Conclave & Investors Dinner 2025</h3>
+                                    <p>Nairobi, Kenya</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide-item">
+                            <div class="slide-content">
+                                <img src="Assets/images/carousel/asia1.jpg" alt="Asian Business Forum">
+                                <div class="slide-info">
+                                    <span class="slide-category">Business Forum</span>
+                                    <h3>Asian Business Forum 2023</h3>
+                                    <p>Kuala Lumpur, Malaysia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="slide-item">
+                            <div class="slide-content">
+                                <img src="Assets/images/carousel/conclave1.jpg" alt="CEO Conclave">
+                                <div class="slide-info">
+                                    <span class="slide-category">Executive Event</span>
+                                    <h3>CEO Conclave & Investors Dinner</h3>
+                                    <p>Nairobi, Kenya</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more slides following the same pattern -->
+                    </div>
+                </div>
+
+                <div class="slider-progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Collections Section -->
+        <section class="featured-collections">
+            <div class="container-fluid">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Featured Collections</h2>
+                    <p>Explore our curated collections of memorable business moments</p>
+                </div>
+
+                <div class="collections-grid">
+                    <!-- Collection 1 -->
+                    <div class="collection-card" data-aos="fade-up">
+                        <div class="collection-preview">
+                            <img src="Assets/images/Events/2025/CONCLAVE/CEO&#32;CONCLAVE-228-min.jpg"
+                                alt="CEO CONCLAVE & INVESTORS DINNER 2025">
+                            <span class="image-count">24 Photos</span>
+                        </div>
+                        <div class="collection-info">
+                            <h3 class="fw-bold">CEO Conclave & Investors Dinner 2025</h3>
+                            <p>CEO Conclave & Investors Dinner in Nairobi</p>
+                            <a href="gallery.html#" class="view-collection" data-collection="ceo-conclave-2025">
+                                View Collection <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Collection 2 -->
+                    <div class="collection-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="collection-preview">
+                            <img src="Assets/images/Events/2024/ASF.jpg" alt="Partnership Signing">
+                            <span class="image-count">3 Photos</span>
+                        </div>
+                        <div class="collection-info">
+                            <h3>Asia Smart Farming 2024</h3>
+                            <p>Pesticide-Free Farming for a Healthier Nation </p>
+                            <a href="gallery.html#" class="view-collection" data-collection="asf">
+                                View Collection <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Collection 3 -->
+                    <div class="collection-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="collection-preview">
+                            <img src="Assets/images/carousel/asia.jpg" alt="Asian Business Forum">
+                            <span class="image-count">2 Photos</span>
+                        </div>
+                        <div class="collection-info">
+                            <h3>Asian Business Forum</h3>
+                            <p>Smart Farming Initiative in Malaysia</p>
+                            <a href="gallery.html#" class="view-collection" data-collection="asian-forum">
+                                View Collection <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Collection 4 -->
+                    <div class="collection-card" data-aos="fade-up">
+                        <div class="collection-preview">
+                            <img src="Assets/images/carousel/conclave1.jpg" alt="Annual Summit 2023">
+                            <span class="image-count">3 Photos</span>
+                        </div>
+                        <div class="collection-info">
+                            <h3>Annual Summit 2023</h3>
+                            <p>CEO Conclave & Investors Dinner in Nairobi</p>
+                            <a href="gallery.html#" class="view-collection" data-collection="annual-summit">
+                                View Collection <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Collection 5 -->
+                    <!-- <div class="collection-card" data-aos="fade-up">
+                        <div class="collection-preview">
+                            <img src="/Assets/images/carousel/conclave1.jpg" alt="Annual Summit 2023">
+                            <span class="image-count">3 Photos</span>
+                        </div>
+                        <div class="collection-info">
+                            <h3>Annual Summit 2023</h3>
+                            <p>CEO Conclave & Investors Dinner in Nairobi</p>
+                            <a href="#" class="view-collection" data-collection="annual-summit">
+                                View Collection <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Timeline Gallery Section -->
+        <section class="timeline-gallery">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <span class="section-subtitle">Our History</span>
+                    <h2 class="section-title">Milestones Through Time</h2>
+                    <div class="title-separator"><span></span></div>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-progress"></div>
+                    <!-- 2025 -->
+                    <div class="timeline-block" data-aos="fade-up">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <div class="timeline-image">
+                                    <img src="Assets/images/Events/2025/CONCLAVE/CEO&#32;CONCLAVE-407-min.jpg"
+                                        alt="CEO Conclave 2025" data-fancybox="timeline"
+                                        data-caption="Smart Farming Initiative Launch in Malaysia">
+                                    <div class="image-overlay">
+                                        <span class="view-icon"><i class="fas fa-expand"></i></span>
+                                    </div>
+                                </div>
+                                <div class="timeline-details">
+                                    <div class="timeline-meta">
+                                        <span class="event-date">March 13, 2025</span>
+                                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> Nairobi,
+                                            Kenya</span>
+                                    </div>
+                                    <h3>CEO Conclave & Investors Dinner</h3>
+                                    <p>Pioneering Innovation and Sustainable Investments for a Resilient Future.</p>
+                                    <div class="event-stats">
+                                        <span><i class="fas fa-seedling"></i> 9 Countries</span>
+                                        <span><i class="fas fa-users"></i> 150+ Delegates</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024 -->
+                    <div class="timeline-block" data-aos="fade-up">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <div class="timeline-image">
+                                    <img src="Assets/images/carousel/conclave1.jpg" alt="CEO Conclave 2024"
+                                        data-fancybox="timeline" data-caption="CEO Conclave & Investors Dinner 2024">
+                                    <div class="image-overlay">
+                                        <span class="view-icon"><i class="fas fa-expand"></i></span>
+                                    </div>
+                                </div>
+                                <div class="timeline-details">
+                                    <div class="timeline-meta">
+                                        <span class="event-date">January 15, 2024</span>
+                                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> Nairobi,
+                                            Kenya</span>
+                                    </div>
+                                    <h3>CEO Conclave & Investors Dinner</h3>
+                                    <p>A landmark gathering of business leaders fostering cross-continental
+                                        partnerships.</p>
+                                    <div class="event-stats">
+                                        <span><i class="fas fa-users"></i> 100+ Attendees</span>
+                                        <span><i class="fas fa-handshake"></i> Partnerships</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="timeline-block" data-aos="fade-up">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-content">
+                            <div class="content-wrapper">
+                                <div class="timeline-image">
+                                    <img src="Assets/images/carousel/asia.jpg" alt="Smart Farming Initiative"
+                                        data-fancybox="timeline"
+                                        data-caption="Smart Farming Initiative Launch in Malaysia">
+                                    <div class="image-overlay">
+                                        <span class="view-icon"><i class="fas fa-expand"></i></span>
+                                    </div>
+                                </div>
+                                <div class="timeline-details">
+                                    <div class="timeline-meta">
+                                        <span class="event-date">June 28, 2023</span>
+                                        <span class="event-location"><i class="fas fa-map-marker-alt"></i> Kuala Lumpur,
+                                            Malaysia</span>
+                                    </div>
+                                    <h3>Smart Farming Initiative Launch</h3>
+                                    <p>Revolutionizing agriculture through technology and international cooperation.</p>
+                                    <div class="event-stats">
+                                        <span><i class="fas fa-seedling"></i> 5 Countries</span>
+                                        <span><i class="fas fa-chart-line"></i> Economic Investment</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BACK TO TOP BUTTON  -->
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-modern">
+        <div class="footer-waves">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class="wave-1"
+                    d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Brand Column -->
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <div class="footer-brand">
+                            <img src="Assets/images/logo/Web&#32;Version.png" alt="AAMECC Logo" class="footer-logo">
+                            <p class="mt-3">Bridging Business Across Continents through innovative partnerships and
+                                sustainable growth.</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/company/africa-asia-middle-east-chamber-commerce/"
+                                    target="_blank" class="social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://x.com/aamecc_" target="_blank" class="social-link"
+                                    aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/_aamecc/" target="_blank" class="social-link"
+                                    aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@AAMECC-Channel/videos" target="_blank"
+                                    class="social-link" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://wa.me/+254712885069" target="_blank" class="social-link"
+                                    aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Executive.html">Executive</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-2 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <h5 class="footer-title">Services</h5>
+                        <ul class="footer-links">
+                            <li><a href="gallery.html#">Business Networking</a></li>
+                            <li><a href="gallery.html#">Trade Facilitation</a></li>
+                            <li><a href="gallery.html#">Market Research</a></li>
+                            <li><a href="gallery.html#">Policy Advocacy</a></li>
+                            <li><a href="gallery.html#">Business Advisory</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 col-md-4" data-aos="fade-left">
+                        <h5 class="footer-title">Contact Us</h5>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Westlands, Nairobi, Kenya</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+254116000777" class="text-decoration-none text-white">+254116000777</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:info@aamecc.org" class="text-decoration-none text-white">
+                                    <p>info@aamecc.org</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2024 AAMECC. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links">
+                            <li><a href="gallery.html#">Privacy Policy</a></li>
+                            <li><a href="gallery.html#">Terms of Service</a></li>
+                            <li><a href="gallery.html#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script src="Assets/js/main.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Masonry layout
+        var grid = document.querySelector(".gallery-grid");
+        var masonry = new Masonry(grid, {
+            itemSelector: ".gallery-item",
+            columnWidth: ".gallery-item",
+            percentPosition: true,
+        });
+
+        // Filter functionality
+        document.querySelectorAll(".filter-btn").forEach((button) => {
+            button.addEventListener("click", () => {
+                const filter = button.dataset.filter;
+
+                document
+                    .querySelectorAll(".filter-btn")
+                    .forEach((btn) => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                document.querySelectorAll(".gallery-item").forEach((item) => {
+                    if (filter === "all" || item.dataset.category === filter) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+                masonry.layout();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+.aamecc-hero-contact {
+  position: relative;
+  min-height: 100vh;
+  background: var(--primary-color);
+  overflow: hidden;
+}
+
+.aamecc-hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.aamecc-hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 34, 51, 0.95) 0%,
+    rgba(29, 86, 115, 0.9) 100%
+  );
+}
+
+.aamecc-hero-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.shape-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: 10%;
+  left: -150px;
+  animation: floatAnimation 8s infinite ease-in-out;
+}
+
+.shape-square {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  right: -100px;
+  bottom: 20%;
+  transform: rotate(45deg);
+  animation: rotateAnimation 15s infinite linear;
+}
+
+.shape-dots {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.2) 2px,
+    transparent 2px
+  );
+  background-size: 20px 20px;
+  top: 50%;
+  right: 10%;
+  animation: fadeAnimation 3s infinite alternate;
+}
+
+.aamecc-hero-wrapper {
+  position: relative;
+  padding: 8rem 0 4rem;
+  z-index: 1;
+}
+
+.aamecc-hero-content {
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.aamecc-hero-tag {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: var(--accent-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.5s forwards 0.2s;
+}
+
+.aamecc-hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.5s forwards 0.4s;
+}
+
+.aamecc-hero-highlight {
+  display: block;
+  color: var(--accent-color);
+}
+
+.aamecc-hero-description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.5s forwards 0.6s;
+}
+
+.aamecc-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.aamecc-contact-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.aamecc-contact-item:hover {
+  transform: translateY(-10px);
+}
+
+.item-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.item-content {
+  z-index: 1;
+}
+
+.item-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-content a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.item-content a:hover {
+  opacity: 1;
+}
+
+.item-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--secondary-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.aamecc-contact-item:hover .item-hover {
+  opacity: 0.2;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes fadeAnimation {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .aamecc-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .aamecc-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.aamecc-hero-contact {
+    position: relative;
+    min-height: 100vh;
+    background: var(--primary-color);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.aamecc-hero-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+/* CONTACT FORM */
+.aamecc-contact {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  padding-right: 2rem;
+}
+
+.info-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.info-subtitle {
+  color: var(--secondary-color);
+  margin-bottom: 3rem;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 34, 51, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateX(10px);
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.card-content h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+  color: var(--accent-color);
+}
+
+.contact-form-container {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 34, 51, 0.1);
+}
+
+.aamecc-form .form-floating {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.form-floating label {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  color: #6c757d;
+  transition: 0.3s ease all;
+  pointer-events: none;
+}
+
+.form-input:focus ~ label,
+.form-input:not(:placeholder-shown) ~ label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  color: var(--accent-color);
+}
+
+.input-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ddd;
+}
+
+.input-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.form-input:focus ~ .input-line::after {
+  transform: scaleX(1);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  overflow: hidden;
+}
+
+.submit-button:hover {
+  background: var(--secondary-color);
+}
+
+.button-icon {
+  transform: translateX(30px);
+  opacity: 0;
+  transition: 0.3s ease all;
+}
+
+.submit-button:hover .button-icon {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0 1rem;
+  }
+
+  .contact-info {
+    padding-right: 0;
+  }
+}
+
+/* Mouse Follow Animation */
+.mouse-follow-container {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.mouse-follow-circle {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s;
+    opacity: 0.5;
+}
+
+.mouse-follow-dot {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    position: relative;
+}
+
+.mouse::before {
+    content: '';
+    width: 4px;
+    height: 8px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8px;
+    border-radius: 2px;
+    animation: scrollAnim 1.5s infinite;
+}
+
+@keyframes scrollAnim {
+    0% { transform: translate(-50%, 0); opacity: 1; }
+    100% { transform: translate(-50%, 20px); opacity: 0; }
+}
